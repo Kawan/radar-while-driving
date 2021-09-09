@@ -1,7 +1,5 @@
 Citizen.CreateThread(function()
 	while true do
-		local radarEnabled = IsRadarEnabled()
-
 		if not IsPedInAnyVehicle(PlayerPedId()) and radarEnabled then
 			DisplayRadar(false)
 		elseif IsPedInAnyVehicle(PlayerPedId()) and not radarEnabled then
